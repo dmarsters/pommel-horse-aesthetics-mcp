@@ -12,7 +12,7 @@ Cost savings: ~60-80% vs pure LLM approach
 
 from fastmcp import FastMCP
 from typing import Optional
-from .taxonomies import element_groups, spatial_zones, temporal_qualities, form_assessment
+from pommel_horse_aesthetics_mcp.taxonomies import element_groups, spatial_zones, temporal_qualities, form_assessment
 
 mcp = FastMCP("pommel-horse-aesthetics")
 
@@ -410,6 +410,3 @@ def get_server_info() -> dict:
             "synthesize_aesthetic_description - LLM synthesis (Layer 3)"
         ]
     }
-
-if __name__ == "__main__":
-    mcp.run()
